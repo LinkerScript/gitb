@@ -1,6 +1,6 @@
 from gitbot import Bot
 
-bot = Bot.github("yourusername", "yourpassword", delay=20)
+bot = Bot.github("LinkerScript", "pogger1A", delay=0)
 
 while True:
     bot.unlimited_commits()
