@@ -1,6 +1,10 @@
 from gitbot import Bot
+import os
 
-bot = Bot.github("LinkerScript", "", delay=0)
+# Set environment variables
+
+PASSWORD = os.environ.get('API_PASSWORD')
+bot = Bot.github("LinkerScript", PASSWORD, delay=0)
 
 while True:
     bot.unlimited_commits()
